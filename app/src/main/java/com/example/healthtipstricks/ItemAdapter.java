@@ -1,6 +1,8 @@
 package com.example.healthtipstricks;
 
 import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -21,7 +23,9 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemViewHolder> {
     @NonNull
     @Override
     public ItemViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+
+        View view= LayoutInflater.from(context).inflate(R.layout.item_design, parent,false);
+        return new ItemViewHolder(view);
     }
 
     @Override
