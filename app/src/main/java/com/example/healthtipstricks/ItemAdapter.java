@@ -31,10 +31,15 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ItemViewHolder holder, int position) {
 
+        Data data = dataList.get(position);
+
+        holder.img.setImageResource(data.getImg());
+        holder.title.setText(data.getTitle());
+
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return dataList.size();
     }
 }
