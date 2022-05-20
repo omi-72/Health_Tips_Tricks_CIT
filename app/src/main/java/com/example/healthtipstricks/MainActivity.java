@@ -13,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     List<Data> dataList;
 
+    ItemAdapter adapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,5 +29,8 @@ public class MainActivity extends AppCompatActivity {
         dataList.add(new Data(R.drawable.ic_meditation_women_small,"Meditation","If you’re an overthinker, you may have come to believe meditation isn’t for you. But according to experts, successful meditation is possible, even for people with busy minds.\n As with any other good habit, practice makes perfect when it comes to calming our thoughts.\n Choosing a regular time of day is a simple step toward training your brain that it’s time to chill. "));
         dataList.add(new Data(R.drawable.ic_yoga,"Yoga","The fact that you’re interested in starting a yoga class is a step in the right direction. There are many ways that you can make your yoga practice work for you, even if you only have a few minutes each day to dedicate to it. Use these yoga beginner tips as a jumping-off point to get started. You do not need to use all of them—allow your yoga practice to naturally grow and develop over time."));
 
+        adapter= new ItemAdapter(MainActivity.this, dataList);
+
+        recyclerView.setAdapter(adapter);
     }
 }
