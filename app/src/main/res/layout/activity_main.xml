@@ -23,17 +23,49 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/health_tips_n_and_tricks"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:textColor="@color/text_color"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="100dp"
-        android:layout_marginLeft="100dp"
-        />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="100dp"
+      android:layout_marginTop="100dp"
+      android:fontFamily="@font/roboto"
+      android:text="@string/health_tips_n_and_tricks"
+      android:textColor="@color/text_color"
+      android:textSize="25sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/ic_menu2"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:layout_margin="10dp"
+      />
+
+  <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:src="@drawable/curve"
+      android:scaleType="fitXY"
+      app:layout_constraintBottom_toBottomOf="@id/top_lay" />
+
+  <ImageView
+      android:layout_width="60dp"
+      android:layout_height="60dp"
+      android:src="@drawable/lines"
+      android:layout_marginRight="54dp"
+      android:layout_marginBottom="25dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintBottom_toBottomOf="@id/top_lay"
+      />
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
