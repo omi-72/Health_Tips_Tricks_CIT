@@ -40,7 +40,8 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemViewHolder> {
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent= new Intent(context,)
+                Intent intent= new Intent(context,DetailsActivity2.class);
+                context.startActivity(intent);
             }
         });
 
