@@ -44,7 +44,6 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemViewHolder> {
                 intent.putExtra("img", data.img);
                 intent.putExtra("title",data.title);
                 intent.putExtra("desc", data.desc);
-
                 context.startActivity(intent);
 
 
