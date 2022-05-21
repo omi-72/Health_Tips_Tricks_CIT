@@ -1,6 +1,7 @@
 package com.example.healthtipstricks;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -35,6 +36,13 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemViewHolder> {
 
         holder.img.setImageResource(data.getImg());
         holder.title.setText(data.getTitle());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(context,)
+            }
+        });
 
     }
 
