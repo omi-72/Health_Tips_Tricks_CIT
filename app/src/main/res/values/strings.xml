@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Health Tips &amp; Tricks</string>
     <string name="health_tips_n_and_tricks">Health Tips \n and Tricks</string>
+    <string name="title">Title</string>
+    <string name="desc">Description</string>
 </resources>
