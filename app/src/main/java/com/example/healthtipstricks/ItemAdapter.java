@@ -41,7 +41,13 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemViewHolder> {
             @Override
             public void onClick(View view) {
                 Intent intent= new Intent(context,DetailsActivity2.class);
+                intent.putExtra("img", data.img);
+                intent.putExtra("title",data.title);
+                intent.putExtra("desc", data.desc);
+
                 context.startActivity(intent);
+
+
             }
         });
 

@@ -12,6 +12,7 @@ public class DetailsActivity2 extends AppCompatActivity {
 
     ImageView img, back_btn;
     TextView title, desc;
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
