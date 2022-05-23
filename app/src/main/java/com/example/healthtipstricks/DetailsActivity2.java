@@ -23,7 +23,7 @@ public class DetailsActivity2 extends AppCompatActivity {
 
         img= findViewById(R.id.img);
         title= findViewById(R.id.title);
-        title= findViewById(R.id.desc);
+        desc= findViewById(R.id.desc);
         back_btn= findViewById(R.id.back_btn);
 
         intent= getIntent();
