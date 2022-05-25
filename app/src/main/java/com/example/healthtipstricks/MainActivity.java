@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,5 +34,13 @@ public class MainActivity extends AppCompatActivity {
         adapter= new ItemAdapter(MainActivity.this, dataList);
 
         recyclerView.setAdapter(adapter);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.top_menu,menu);
+
+        return super.onCreateOptionsMenu(menu);
     }
 }
