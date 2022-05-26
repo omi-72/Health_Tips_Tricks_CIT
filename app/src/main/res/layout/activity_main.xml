@@ -36,14 +36,7 @@
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
 
-  <ImageView
-      android:layout_width="40dp"
-      android:layout_height="30dp"
-      android:src="@drawable/ic_menu"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      android:layout_margin="10dp"
-      />
+
 
   <ImageView
       android:id="@+id/name"
@@ -56,9 +49,9 @@
   <ImageView
       android:layout_width="60dp"
       android:layout_height="60dp"
-      android:src="@drawable/lines"
-      android:layout_marginRight="46dp"
-      android:layout_marginBottom="30dp"
+      android:src="@drawable/ic_baseline_scatter_plot_24"
+      android:layout_marginRight="48dp"
+      android:layout_marginBottom="28dp"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintBottom_toBottomOf="@id/top_lay"
       />
