@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -57,7 +58,24 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.home:
-                Intent intent = new Intent(MainActivity.this,)
+                Intent intent = new Intent(MainActivity.this,HomeActivity.class);
+                startActivity(intent);
+                break;
+
+            case R.id.account:
+                Intent intent2 = new Intent(MainActivity.this,HomeActivity.class);
+                startActivity(intent2);
+                break;
+
+            case R.id.setting:
+                Intent intent3 = new Intent(MainActivity.this,HomeActivity.class);
+                startActivity(intent3);
+                break;
+
+            case R.id.log_out:
+                Intent intent4 = new Intent(MainActivity.this,HomeActivity.class);
+                startActivity(intent4);
+                break;
         }
         return super.onOptionsItemSelected(item);
     }
