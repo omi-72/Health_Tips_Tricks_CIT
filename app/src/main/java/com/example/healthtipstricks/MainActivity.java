@@ -1,12 +1,15 @@
 package com.example.healthtipstricks;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,5 +51,14 @@ public class MainActivity extends AppCompatActivity {
         menuInflater.inflate(R.menu.top_menu,menu);
 
         return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.home:
+                Intent intent = new Intent(MainActivity.this,)
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
